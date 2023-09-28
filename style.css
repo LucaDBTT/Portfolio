@@ -1,0 +1,27 @@
+#Dev{
+    font-size: 48px; /* Tamaño de fuente grande para un impacto visual */
+    color: #ff003c; /* Color del texto (puedes cambiarlo según tu preferencia) */
+    font-family: "Arial", sans-serif; /* Fuente del texto */
+    text-align: center; /* Centrar el texto horizontalmente */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-bottom: 20px; /* Margen inferior para separarlo del contenido */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave para destacar el texto */
+}
+
+#Dev:hover{
+    color: #de708d; /* Cambia el color del texto al pasar el ratón por encima */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada en hover */
+}
+
+.Imagen {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Centra verticalmente */
+    height: 100vh; /* Ajusta la altura para centrar verticalmente en la ventana */
+  }
+  
+  .Imagen img {
+    max-width: 100%; /* Ajusta el ancho de la imagen para que no se desborde */
+    max-height: 100%; /* Ajusta la altura de la imagen para que no se desborde */
+  }
