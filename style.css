@@ -19,18 +19,6 @@ animation: gradientAnimation 10s ease infinite;
   }
 }
 
-@media (max-width: 768px) {
-  .menu-button {
-      display: block;
-  }
-
-  .nav-links {
-      flex-direction: column;
-      top: 0;
-      transform: translateY(-100%);
-  }
-}
-
 header {
   background-color: #B51A2B;
   color: white;
@@ -396,4 +384,101 @@ nav {
   background-color: #050505;
 }
 
+
+/*movil*/
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Ocultar el botón por defecto */
+}
+
+/* Estilo para la lista de navegación en dispositivos móviles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    top: 0;
+    transform: translateY(-100%);
+  }
+
+  .logo img {
+    width: 40px; /* Ajusta el tamaño del logo para dispositivos móviles */
+    height: 40px;
+  }
+
+  .logo span {
+    font-size: 24px; /* Ajusta el tamaño del texto del logo para dispositivos móviles */
+  }
+
+  .Pres {
+    padding: 50px; /* Reduce el espacio de padding en la sección de Presentación para dispositivos móviles */
+  }
+
+  .SobreMiTexto img {
+    margin-left: 0; /* Elimina el margen izquierdo de la imagen en la sección Sobre Mí para dispositivos móviles */
+  }
+
+  .SobreMi {
+    font-size: 24px; /* Ajusta el tamaño del título en la sección Sobre Mí para dispositivos móviles */
+    margin-left: 0; /* Elimina el margen izquierdo del título en la sección Sobre Mí para dispositivos móviles */
+  }
+
+  .ConocimientosLista img,
+  .ConocimientosLista li {
+    width: 60px; /* Ajusta el tamaño de las imágenes y márgenes en la sección de Conocimientos para dispositivos móviles */
+    height: 60px;
+    margin-right: 5px;
+  }
+
+  .InformacionGeneralTexto {
+    font-size: 16px; /* Ajusta el tamaño del texto en la sección Información General para dispositivos móviles */
+  }
+
+  .ProyectosTitulo {
+    font-size: 24px; /* Ajusta el tamaño del título en la sección Proyectos para dispositivos móviles */
+  }
+
+  .Proyecto {
+    width: 100%; /* Cambia el ancho de los proyectos para que ocupen el 100% del ancho en dispositivos móviles */
+    margin-bottom: 20px; /* Agrega espacio entre los proyectos para dispositivos móviles */
+  }
+
+  .Proyecto img {
+    max-height: 150px; /* Ajusta la altura máxima de las imágenes de proyectos en dispositivos móviles */
+  }
+
+  .nav-links {
+    display: none; /* Ocultar la lista de navegación por defecto en dispositivos móviles */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #B51A2B;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Mostrar la lista de navegación cuando el botón de hamburguesa está "chequeado" */
+  .menu-button:checked + .nav-container .nav-links {
+    display: flex;
+  }
+
+}
 
