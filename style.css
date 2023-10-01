@@ -5,6 +5,20 @@ color: white;
 background: linear-gradient(45deg, black, white, black, white);
 background-size: 400% 400%;
 animation: gradientAnimation 10s ease infinite;
+font-size: 16px;
+    margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem; 
+}
+
+p {
+  font-size: 1rem; 
+}
+
+.logo img {
+  width: 10%; 
 }
 
 @keyframes gradientAnimation {
@@ -135,28 +149,28 @@ nav {
   list-style: none;
   padding: 0;
   display: flex;
-  align-items: center; /* Alinea verticalmente los íconos en el centro */
-  justify-content: center; /* Centra horizontalmente los íconos */
+  align-items: center; 
+  justify-content: center;
 }
 
 .redes-sociales li {
-  margin: 0 20px; /* Espacio entre los íconos, puedes ajustar según necesites */
+  margin: 0 20px; 
 }
 
 .redes-sociales a {
-  text-decoration: none; /* Quita la subrayado de los enlaces */
+  text-decoration: none; 
 }
 
 .redes-sociales img {
-  width: 100px; /* Tamaño de los íconos, ajusta según tus necesidades */
+  width: 100px; 
   height: 100px;
-  border-radius: 50%; /* Hace que los íconos sean redondos */
-  padding: 20px; /* Espacio interno para separar el fondo rojo del ícono */
-  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al hacer hover */
+  border-radius: 50%; 
+  padding: 20px; 
+  transition: transform 0.2s ease-in-out;
 }
 
 .redes-sociales img:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+  transform: scale(1.1); 
 }
 
 .Sociales {
@@ -172,11 +186,11 @@ nav {
 
 
 .Redes {
-  font-size: 30px; /* Tamaño del texto */
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #B51A2B; /* Color del texto */
-  text-align: center; /* Centrar el texto horizontalmente */ 
+  color: #B51A2B; 
+  text-align: center; 
 }
 
 .Redes i{
@@ -186,10 +200,10 @@ nav {
 }
 
 .redes-sociales a span {
-  display: block; /* Coloca cada nombre en una línea separada */
-  text-align: center; /* Centra el texto horizontalmente */
-  font-size: 14px; /* Tamaño de fuente deseado */
-  margin-top: 5px; /* Espacio entre el icono y el nombre */
+  display: block; 
+  text-align: center; 
+  font-size: 14px;
+  margin-top: 5px; 
 }
 
 .redes-sociales li {
@@ -200,9 +214,9 @@ nav {
 }
 
 .redes-sociales a span {
-  font-size: 14px; /* Tamaño de fuente deseado */
-  margin-top: 5px; /* Espacio entre el icono y el nombre */
-  color: white; /* Color del texto */
+  font-size: 14px; 
+  margin-top: 5px; 
+  color: white; 
 }
 
 
@@ -238,23 +252,23 @@ nav {
 .ConocimientosLista {
   list-style: none;
   display: flex;
-  justify-content: space-between; /* Distribuir los elementos horizontalmente */
-  align-items: center; /* Alinear verticalmente los elementos */
+  justify-content: space-between; 
+  align-items: center; 
   padding: 0;
   margin: 0;
 }
 
 .ConocimientosLista li {
-  margin-right: 10px; /* Espacio entre las imágenes, puedes ajustarlo según tus preferencias */
-  border-radius: 50%; /* Redondea las imágenes */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del círculo */
-  width: 100px; /* Tamaño deseado para las imágenes */
-  height: 100px; /* Tamaño deseado para las imágenes */
+  margin-right: 10px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  width: 100px; 
+  height: 100px; 
 }
 
 .ConocimientosLista img {
-  width: 100%; /* Asegura que las imágenes se ajusten al tamaño del contenedor */
-  height: 100%; /* Asegura que las imágenes se ajusten al tamaño del contenedor */
+  width: 100%;
+  height: 100%; 
   transition: transform 0.2s ease-in-out;
 }
 .ConocimientosLista img:HOVER {
@@ -314,13 +328,13 @@ nav {
 }
 
 .Proyecto {
-  width: calc(33.33% - 20px); /* Para que haya espacio entre los proyectos */
+  width: calc(33.33% - 20px);
 }
 
 .Proyecto img {
   width: 100%;
-  max-height: 200px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-  object-fit: cover; /* Para que las imágenes se ajusten al tamaño del contenedor */
+  max-height: 200px;
+  object-fit: cover; 
 }
 
 .ProyectoTitulo {
@@ -335,7 +349,7 @@ nav {
 }
 
 .ProyectoEnlace:hover {
-  background-color: #050505; /* Cambia el color al hacer hover */
+  background-color: #050505; 
 }
 
 
@@ -384,101 +398,105 @@ nav {
   background-color: #050505;
 }
 
-
-/*movil*/
-.menu-icon {
-  font-size: 30px;
-  cursor: pointer;
-  display: none; /* Ocultar el botón por defecto */
-}
-
-/* Estilo para la lista de navegación en dispositivos móviles */
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
+  
   .nav-links {
-    flex-direction: column;
-    top: 0;
-    transform: translateY(-100%);
-  }
-
-  .logo img {
-    width: 40px; /* Ajusta el tamaño del logo para dispositivos móviles */
-    height: 40px;
-  }
-
-  .logo span {
-    font-size: 24px; /* Ajusta el tamaño del texto del logo para dispositivos móviles */
-  }
-
-  .Pres {
-    padding: 50px; /* Reduce el espacio de padding en la sección de Presentación para dispositivos móviles */
-  }
-
-  .SobreMiTexto img {
-    margin-left: 0; /* Elimina el margen izquierdo de la imagen en la sección Sobre Mí para dispositivos móviles */
-  }
-
-  .SobreMi {
-    font-size: 24px; /* Ajusta el tamaño del título en la sección Sobre Mí para dispositivos móviles */
-    margin-left: 0; /* Elimina el margen izquierdo del título en la sección Sobre Mí para dispositivos móviles */
-  }
-
-  .ConocimientosLista img,
-  .ConocimientosLista li {
-    width: 60px; /* Ajusta el tamaño de las imágenes y márgenes en la sección de Conocimientos para dispositivos móviles */
-    height: 60px;
-    margin-right: 5px;
-  }
-
-  .InformacionGeneralTexto {
-    font-size: 16px; /* Ajusta el tamaño del texto en la sección Información General para dispositivos móviles */
-  }
-
-  .ProyectosTitulo {
-    font-size: 24px; /* Ajusta el tamaño del título en la sección Proyectos para dispositivos móviles */
-  }
-
-  .Proyecto {
-    width: 100%; /* Cambia el ancho de los proyectos para que ocupen el 100% del ancho en dispositivos móviles */
-    margin-bottom: 20px; /* Agrega espacio entre los proyectos para dispositivos móviles */
-  }
-
-  .Proyecto img {
-    max-height: 150px; /* Ajusta la altura máxima de las imágenes de proyectos en dispositivos móviles */
-  }
-
-  .nav-links {
-    display: none; /* Ocultar la lista de navegación por defecto en dispositivos móviles */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #B51A2B;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Mostrar la lista de navegación cuando el botón de hamburguesa está "chequeado" */
-  .menu-button:checked + .nav-container .nav-links {
-    display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
 }
 
+@media (max-width: 768px) and (max-width: 1024px){
+
+    .redes-sociales li {
+      margin: 5px; 
+    }
+
+    .redes-sociales img {
+      width: 40px; 
+      height: 40px;
+    }
+
+    .ConocimientosLista {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .ConocimientosLista li {
+      flex-basis: calc(33.33% - 10px); 
+      margin-right: 10px;
+      margin-bottom: 10px; 
+      height: auto;
+    }
+
+    .ConocimientosLista img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50px;
+      object-fit: cover;
+      transition: transform 0.2s ease-in-out;
+    }
+
+   
+    .ConocimientosLista img:hover {
+      transform: scale(1.1);
+    }
+
+    .Proyecto {
+      width: 100%; 
+      margin-bottom: 20px; 
+    }
+
+    .Proyecto img {
+      width: 100%;
+      max-height: 150px; 
+      object-fit: cover;
+    }
+
+    .logo {
+      flex-direction: column; 
+      text-align: center;
+    }
+    .logo img {
+      width: 40px; 
+      height: 40px;
+
+    }
+    .logo span {
+      font-size: 20px; 
+    }
+    .nav-links {
+      flex-direction: column; 
+      align-items: center; 
+      margin-top: 10px; 
+    }
+    .nav-links li {
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+
+    .SobreMiTexto {
+      flex-direction: column; 
+      text-align: center; 
+    }
+    .SobreMiTexto img {
+      width: 150px; 
+      height: 150px;
+      margin: 0 auto 20px;
+      margin: 40px;
+    }
+
+    .SobreMi {
+      font-size: 28px;
+      text-align: center;
+      margin-left: 0px;
+    }
+
+    .SobreMiTexto p {
+      margin-bottom: 20px;
+    }
+  }
+  
