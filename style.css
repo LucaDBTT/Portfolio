@@ -2,11 +2,25 @@ body{
 font-family: 'Montserrat', sans-serif;
 background-color: #222121;
 color: white;
+background: linear-gradient(45deg, black, white, black, white);
+background-size: 400% 400%;
+animation: gradientAnimation 10s ease infinite;
+}
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 header {
-  background-color: #be193a;
+  background-color: #B51A2B;
   color: white;
   padding: 20px 0;
   box-shadow: 5px 5px 10px rgb(255, 1, 1);
@@ -66,13 +80,13 @@ nav {
   color: #050505;
 }
 
-.centered-section {
-  background-color: #be193a; 
+.Pres {
+  background-color: #222121; 
   color: white;
   text-align: center;
-  padding: 60px; 
-  max-width: 800px; 
-  margin: 70px auto; 
+  padding: 100px; 
+  max-width: 900px; 
+  margin: 130px auto; 
   box-shadow: 5px 5px 10px rgb(255, 1, 1);
 }
 
@@ -83,8 +97,8 @@ nav {
 
 .SobreMiTexto img {
   margin-left: 100px; 
-  width: 200px; 
-  height:200px;
+  width: 300px; 
+  height:300px;
   margin-right: 10px; 
   border-radius: 50%;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
@@ -101,7 +115,9 @@ nav {
   margin-left: 50px;
   display: flex;
   align-items: center;
+  
 }
+
 .icon-large {
   font-size: 24px; 
   margin-right: 10px; 
@@ -109,6 +125,132 @@ nav {
 
 .SobreMi i {
   margin-left: 20px; 
-  color: #000000; 
+  color: WHITE; 
   font-size: 30px;
+}
+
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Alinea verticalmente los íconos en el centro */
+  justify-content: center; /* Centra horizontalmente los íconos */
+}
+
+.redes-sociales li {
+  margin: 0 20px; /* Espacio entre los íconos, puedes ajustar según necesites */
+}
+
+.redes-sociales a {
+  text-decoration: none; /* Quita la subrayado de los enlaces */
+}
+
+.redes-sociales img {
+  width: 100px; /* Tamaño de los íconos, ajusta según tus necesidades */
+  height: 100px;
+  border-radius: 50%; /* Hace que los íconos sean redondos */
+  padding: 20px; /* Espacio interno para separar el fondo rojo del ícono */
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+.Sociales {
+  background-color: #B51A2B; 
+  border-radius:inherit;
+  box-shadow: 5px 5px 10px #222121;
+  color: white;
+  text-align: center;
+  padding: 100px; 
+  max-width: 2300px; 
+  margin: 200px auto; 
+}
+
+
+.Redes {
+  font-size: 30px; /* Tamaño del texto */
+  color: BLACK; /* Color del texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin-bottom: 80px; 
+}
+
+.Redes i{
+  margin-left: 10px; 
+  color: BLACK; 
+  font-size: 30px;
+}
+
+.redes-sociales a span {
+  display: block; /* Coloca cada nombre en una línea separada */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 14px; /* Tamaño de fuente deseado */
+  margin-top: 5px; /* Espacio entre el icono y el nombre */
+}
+
+.redes-sociales li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.redes-sociales a span {
+  font-size: 14px; /* Tamaño de fuente deseado */
+  margin-top: 5px; /* Espacio entre el icono y el nombre */
+  color: white; /* Color del texto */
+}
+
+
+.Conocimientos {
+  background-color: #222121;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 5px 5px 10px rgb(255, 1, 1);
+}
+
+.ConocimientosTitulo {
+  font-size: 30px;
+  color: white;
+}
+
+.ConocimientosLista {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.ConocimientosLista li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.ConocimientosLista {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Distribuir los elementos horizontalmente */
+  align-items: center; /* Alinear verticalmente los elementos */
+  padding: 0;
+  margin: 0;
+}
+
+.ConocimientosLista li {
+  margin-right: 10px; /* Espacio entre las imágenes, puedes ajustarlo según tus preferencias */
+  border-radius: 50%; /* Redondea las imágenes */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del círculo */
+  width: 100px; /* Tamaño deseado para las imágenes */
+  height: 100px; /* Tamaño deseado para las imágenes */
+}
+
+.ConocimientosLista img {
+  width: 100%; /* Asegura que las imágenes se ajusten al tamaño del contenedor */
+  height: 100%; /* Asegura que las imágenes se ajusten al tamaño del contenedor */
+  transition: transform 0.2s ease-in-out;
+}
+.ConocimientosLista img:HOVER {
+  transform: scale(1.1);
 }
