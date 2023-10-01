@@ -19,6 +19,18 @@ animation: gradientAnimation 10s ease infinite;
   }
 }
 
+@media (max-width: 768px) {
+  .menu-button {
+      display: block;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      top: 0;
+      transform: translateY(-100%);
+  }
+}
+
 header {
   background-color: #B51A2B;
   color: white;
@@ -66,7 +78,7 @@ nav {
 
 .nav-links li {
   margin-right: 40px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight:bold;
 }
 
@@ -110,8 +122,10 @@ nav {
 }
 
 .SobreMi {
-  font-size: 30px; 
-  color: WHITE; 
+  font-size: 36px; 
+  font-weight: bold;
+  color: #B51A2B;
+  margin-bottom: 20px;
   margin-left: 50px;
   display: flex;
   align-items: center;
@@ -125,7 +139,7 @@ nav {
 
 .SobreMi i {
   margin-left: 20px; 
-  color: WHITE; 
+  color: #B51A2B; 
   font-size: 30px;
 }
 
@@ -158,9 +172,9 @@ nav {
 }
 
 .Sociales {
-  background-color: #B51A2B; 
+  background-color: #222121; 
   border-radius:inherit;
-  box-shadow: 5px 5px 10px #222121;
+  box-shadow: 5px 5px 10px rgb(255, 1, 1);
   color: white;
   text-align: center;
   padding: 100px; 
@@ -171,14 +185,15 @@ nav {
 
 .Redes {
   font-size: 30px; /* Tamaño del texto */
-  color: BLACK; /* Color del texto */
-  text-align: center; /* Centrar el texto horizontalmente */
-  margin-bottom: 80px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #B51A2B; /* Color del texto */
+  text-align: center; /* Centrar el texto horizontalmente */ 
 }
 
 .Redes i{
   margin-left: 10px; 
-  color: BLACK; 
+  color: #B51A2B; 
   font-size: 30px;
 }
 
@@ -210,12 +225,15 @@ nav {
   padding: 100px;
   max-width: 900px;
   margin: 50px auto;
+  margin-top: 150px;
   box-shadow: 5px 5px 10px rgb(255, 1, 1);
 }
 
 .ConocimientosTitulo {
-  font-size: 30px;
-  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  color: #B51A2B;
+  margin-bottom: 50px;
 }
 
 .ConocimientosLista {
@@ -254,3 +272,128 @@ nav {
 .ConocimientosLista img:HOVER {
   transform: scale(1.1);
 }
+
+.InformacionGeneral {
+  background-color: #222121;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(255, 1, 1);
+}
+
+.InformacionGeneral Ul{
+  list-style: none;
+}
+
+.InformacionGeneralTitulo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #B51A2B;
+  margin-bottom: 40px;
+}
+
+.InformacionGeneralTexto {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.Proyectos {
+  background-color: #222121;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  max-width: 1200px;
+  margin: 50px auto;
+  margin-top: 150px;
+  box-shadow: 5px 5px 10px rgb(255, 1, 1);
+}
+
+.ProyectosTitulo {
+  font-size: 30px;
+  color: #B51A2B;
+}
+
+.ProyectosContenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.Proyecto {
+  width: calc(33.33% - 20px); /* Para que haya espacio entre los proyectos */
+}
+
+.Proyecto img {
+  width: 100%;
+  max-height: 200px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+  object-fit: cover; /* Para que las imágenes se ajusten al tamaño del contenedor */
+}
+
+.ProyectoTitulo {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.ProyectoDescripcion {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ProyectoEnlace:hover {
+  background-color: #050505; /* Cambia el color al hacer hover */
+}
+
+
+#VerMas1{
+  display: block;
+  background-color: #B51A2B;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 65px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#VerMas1:hover{
+  background-color: #050505;
+}
+
+#VerMas2{
+  display: block;
+  background-color: #B51A2B;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 0px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#VerMas2:hover{
+  background-color: #050505;
+}
+
+#VerMas3{
+  display: block;
+  background-color: #B51A2B;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 45px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#VerMas3:hover{
+  background-color: #050505;
+}
+
+
