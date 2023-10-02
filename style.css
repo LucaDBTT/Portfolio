@@ -6,7 +6,7 @@ background: linear-gradient(45deg, black, white, black, white);
 background-size: 400% 400%;
 animation: gradientAnimation 10s ease infinite;
 font-size: 16px;
-    margin: 0 auto;
+margin: 0 auto;
 }
 
 h2 {
@@ -61,14 +61,17 @@ nav {
   border-radius: 50%;
 }
 
-.logo span {
+.logo a {
   font-size: 30px;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
   transition: color 0.3s; 
+  text-decoration: none;
 }
 
 
-.logo:hover span {
+.logo:hover a {
   color: #050505; 
 }
 
@@ -467,7 +470,7 @@ nav {
       height: 40px;
 
     }
-    .logo span {
+    .logo a {
       font-size: 20px; 
     }
     .nav-links {
@@ -532,7 +535,10 @@ nav {
       padding: 10px 20px;
     }
   }
-
+    #mensaje {
+      resize: none;
+    }
+    
   form {
     background-color: #222121;
     color: white;
@@ -622,7 +628,6 @@ nav {
     margin-top: 25px;
   }
   
-
   .success-message p::before {
     font-size: 24px;
     margin-right: 10px;
