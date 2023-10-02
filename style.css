@@ -181,7 +181,8 @@ nav {
   text-align: center;
   padding: 100px; 
   max-width: 2300px; 
-  margin: 200px auto; 
+  margin: 200px auto;
+  bottom:0;
 }
 
 
@@ -218,6 +219,7 @@ nav {
   margin-top: 5px; 
   color: white; 
 }
+
 
 
 .Conocimientos {
@@ -498,5 +500,108 @@ nav {
     .SobreMiTexto p {
       margin-bottom: 20px;
     }
+
+    .contact-section {
+      text-align: center;
+    }
+  
+    .contact-form {
+      max-width: 90%;
+    }
+  
+    .contact-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    label {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 14px;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+  
+    .btn-submit {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+
+  form {
+    background-color: #222121;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(255, 1, 1);
+
   }
   
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .btn-submit {
+    background-color: #B51A2B;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #050505;
+  }
+  
+
+  .contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #B51A2B;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-section{
+    background-color: #222121;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    max-width: 1200px;
+    margin: 50px auto;
+    margin-top: 150px;
+    box-shadow: 5px 5px 10px rgb(255, 1, 1);
+  }
