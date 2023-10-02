@@ -605,3 +605,26 @@ nav {
     margin-top: 150px;
     box-shadow: 5px 5px 10px rgb(255, 1, 1);
   }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .success-message {
+    background-color: #326234;
+    color: white; 
+    padding: 5px; 
+    border-radius: 5px; 
+    text-align: center; 
+    display: none; 
+    margin-top: 25px;
+  }
+  
+
+  .success-message p::before {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
