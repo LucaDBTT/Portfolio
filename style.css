@@ -17,7 +17,7 @@ p {
   font-size: 1rem; 
 }
 
-.logo img {
+.my-custom-header .container img {
   width: 10%; 
 }
 
@@ -33,14 +33,14 @@ p {
   }
 }
 
-header {
-  background-color: #B51A2B;
+.my-custom-header {
+  background-color: #B51A2B !important;
   color: white;
   padding: 20px 0;
   box-shadow: 5px 5px 10px rgb(255, 1, 1);
 }
 
-nav {
+.Nav-header {
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -49,19 +49,29 @@ nav {
   padding: 0 20px;
 }
 
-.logo {
+.my-custom-header .navbar {
+  background-color: #B51A2B !important;
   display: flex;
-  align-items: center; 
+  justify-content:space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.logo img {
+.my-custom-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.my-custom-header .container img {
   width: 60px; 
   height:60px;
   margin-right: 10px; 
   border-radius: 50%;
 }
 
-.logo a {
+.my-custom-header .container .navbar-brand {
   font-size: 30px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
@@ -70,85 +80,83 @@ nav {
   text-decoration: none;
 }
 
-
-.logo:hover a {
+.my-custom-header .container a:hover {
   color: #050505; 
 }
 
-
-.nav-links {
+.my-custom-header .n {
   list-style: none;
   display: flex;
 }
 
-.nav-links li {
-  margin-right: 40px;
+.my-custom-header .navbar-nav li {
+  margin-right: 5px;
   font-size: 15px;
   font-weight:bold;
 }
 
-.nav-links a {
+.my-custom-header .navbar-nav a {
   text-decoration: none;
   color: white;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.my-custom-header .navbar-nav a:hover {
   color: #050505;
 }
 
 .Pres {
-  background-color: #222121; 
+  background-color: #222121;
   color: white;
   text-align: center;
-  padding: 100px; 
-  max-width: 900px; 
-  margin: 130px auto; 
+  padding: 100px;
+  max-width: 900px;
+  margin: 130px auto;
   box-shadow: 5px 5px 10px rgb(255, 1, 1);
 }
 
 .SobreMiTexto {
-  display: flex;
-  align-items: center; 
+  display: inline-block;
+  align-items: center;
+  flex-direction: column; /* Alinea el texto e imagen verticalmente */
+  text-align: center;
 }
 
-.SobreMiTexto img {
-  margin-left: 100px; 
-  width: 300px; 
-  height:300px;
-  margin-right: 10px; 
+.col-md-6 img {
+  margin-top: 38%;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
   transition: transform 0.1s ease-in-out;
 }
 
-.SobreMiTexto img:hover {
+.col-md-6 img:hover {
   transform: translateY(-2px);
 }
 
 .SobreMi {
-  font-size: 36px; 
+  display: inline-block;
+  font-size: 36px;
   font-weight: bold;
   color: #B51A2B;
   margin-bottom: 20px;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  
+  white-space: nowrap;
 }
 
 .icon-large {
-  font-size: 24px; 
-  margin-right: 10px; 
+  font-size: 36px;
+  margin-right: 10px;
 }
 
 .SobreMi i {
-  margin-left: 20px; 
-  color: #B51A2B; 
-  font-size: 30px;
+  margin-left: 10px;
+  color: #B51A2B;
+  font-size: 36px;
 }
 
-.redes-sociales {
+
+.RedesNombre {
   list-style: none;
   padding: 0;
   display: flex;
@@ -156,15 +164,11 @@ nav {
   justify-content: center;
 }
 
-.redes-sociales li {
-  margin: 0 20px; 
+.Sociales li {
+  margin: 0px; 
 }
 
-.redes-sociales a {
-  text-decoration: none; 
-}
-
-.redes-sociales img {
+.col-md-3 img {
   width: 100px; 
   height: 100px;
   border-radius: 50%; 
@@ -172,7 +176,7 @@ nav {
   transition: transform 0.2s ease-in-out;
 }
 
-.redes-sociales img:hover {
+.col-md-3 img:hover {
   transform: scale(1.1); 
 }
 
@@ -203,27 +207,20 @@ nav {
   font-size: 30px;
 }
 
-.redes-sociales a span {
+.RedesNombre{
   display: block; 
   text-align: center; 
   font-size: 14px;
   margin-top: 5px; 
 }
 
-.redes-sociales li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 
-.redes-sociales a span {
-  font-size: 14px; 
+.RedesNombre{
+  font-size: 15px; 
+  font-weight: bold;
   margin-top: 5px; 
   color: white; 
 }
-
-
 
 .Conocimientos {
   background-color: #222121;
@@ -264,7 +261,7 @@ nav {
 }
 
 .ConocimientosLista li {
-  margin-right: 10px; 
+  margin-right: 4px; 
   border-radius: 50%; 
   overflow: hidden; 
   width: 100px; 
@@ -287,13 +284,18 @@ nav {
   padding: 50px;
   max-width: 800px;
   margin: 50px auto;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(255, 1, 1);
 }
 
-.InformacionGeneral Ul{
+.InformacionGeneral ul {
   list-style: none;
+  padding: 0;
+  margin-left: 16%;
+  margin-top: 20px;
+}
+
+.InformacionGeneral li {
+  margin-bottom: 1rem;
 }
 
 .InformacionGeneralTitulo {
@@ -308,7 +310,6 @@ nav {
   line-height: 1.6;
   text-align: justify;
 }
-
 .Proyectos {
   background-color: #222121;
   color: white;
@@ -321,31 +322,36 @@ nav {
 }
 
 .ProyectosTitulo {
-  font-size: 30px;
+  font-size: 36px;
   color: #B51A2B;
+  font-weight: bold;
 }
 
 .ProyectosContenedor {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
 }
 
 .Proyecto {
-  width: calc(33.33% - 20px);
+  width: 300px;
+  margin-bottom: 30px;
 }
 
 .Proyecto img {
   width: 100%;
   max-height: 200px;
-  object-fit: cover; 
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 .ProyectoTitulo {
   font-size: 24px;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .ProyectoDescripcion {
@@ -353,10 +359,20 @@ nav {
   margin-top: 10px;
 }
 
-.ProyectoEnlace:hover {
-  background-color: #050505; 
+.ProyectoEnlace {
+  display: block;
+  background-color: #B51A2B;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
+.ProyectoEnlace:hover {
+  background-color: #050505;
+}
 
 #VerMas1{
   display: block;
@@ -364,7 +380,7 @@ nav {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
-  margin-top: 65px;
+  margin-top: 70px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
@@ -402,139 +418,7 @@ nav {
 #VerMas3:hover{
   background-color: #050505;
 }
-
-@media (max-width: 768px) {
-  
-  .nav-links {
-      flex-direction: column;
-      align-items: center;
-  }
-
-}
-
-@media (max-width: 768px) and (max-width: 1024px){
-
-    .redes-sociales li {
-      margin: 5px; 
-    }
-
-    .redes-sociales img {
-      width: 40px; 
-      height: 40px;
-    }
-
-    .ConocimientosLista {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .ConocimientosLista li {
-      flex-basis: calc(33.33% - 10px); 
-      margin-right: 10px;
-      margin-bottom: 10px; 
-      height: auto;
-    }
-
-    .ConocimientosLista img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50px;
-      object-fit: cover;
-      transition: transform 0.2s ease-in-out;
-    }
-
-   
-    .ConocimientosLista img:hover {
-      transform: scale(1.1);
-    }
-
-    .Proyecto {
-      width: 100%; 
-      margin-bottom: 20px; 
-    }
-
-    .Proyecto img {
-      width: 100%;
-      max-height: 150px; 
-      object-fit: cover;
-    }
-
-    .logo {
-      flex-direction: column; 
-      text-align: center;
-    }
-    .logo img {
-      width: 40px; 
-      height: 40px;
-
-    }
-    .logo a {
-      font-size: 20px; 
-    }
-    .nav-links {
-      flex-direction: column; 
-      align-items: center; 
-      margin-top: 10px; 
-    }
-    .nav-links li {
-      margin-right: 0; 
-      margin-bottom: 10px; 
-    }
-
-    .SobreMiTexto {
-      flex-direction: column; 
-      text-align: center; 
-    }
-    .SobreMiTexto img {
-      width: 150px; 
-      height: 150px;
-      margin: 0 auto 20px;
-      margin: 40px;
-    }
-
-    .SobreMi {
-      font-size: 28px;
-      text-align: center;
-      margin-left: 0px;
-    }
-
-    .SobreMiTexto p {
-      margin-bottom: 20px;
-    }
-
-    .contact-section {
-      text-align: center;
-    }
-  
-    .contact-form {
-      max-width: 90%;
-    }
-  
-    .contact-title {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-  
-    label {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-  
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      font-size: 14px;
-      padding: 8px;
-      margin-bottom: 15px;
-    }
-  
-    .btn-submit {
-      font-size: 16px;
-      padding: 10px 20px;
-    }
-  }
+ 
     #mensaje {
       resize: none;
     }
@@ -556,29 +440,29 @@ nav {
   }
   
   label {
-    font-size: 18px;
+    font-size: 18px ;
     display: block;
   }
   
   input[type="text"],
   input[type="email"],
   textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    background-color: #333;
-    color: white;
+    width: 100% !important; 
+    padding: 10px !important;
+    font-size: 16px !important;
+    border: none !important;
+    background-color: #333 !important;
+    color: white !important;
     border-radius: 5px;
     margin-top: 5px;
   }
   
   textarea {
-    height: 150px;
+    height: 150px !important;
   }
   
-  .btn-submit {
-    background-color: #B51A2B;
+  .btn {
+    background-color: #B51A2B !important;
     color: white;
     padding: 10px 20px;
     font-size: 18px;
@@ -588,8 +472,8 @@ nav {
     transition: background-color 0.3s;
   }
   
-  .btn-submit:hover {
-    background-color: #050505;
+  .btn:hover {
+    background-color: #050505 !important;
   }
   
 
@@ -602,7 +486,7 @@ nav {
   }
   
   .contact-section{
-    background-color: #222121;
+    background-color: #222121 !important;
     color: white;
     text-align: center;
     padding: 100px;
@@ -633,3 +517,338 @@ nav {
     margin-right: 10px;
   }
   
+
+  @media (max-width: 834px) and (min-width: 768px) {
+    .Pres .col-md-6 img {
+      width: 300px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 50%;
+    }
+    .Pres .SobreMi {
+      font-size: 40px;
+      font-weight: bold;
+      color: #B51A2B;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center; 
+    }
+  
+    .Pres .SobreMi i {
+      font-size: 30px;
+      margin-right: 10px; 
+    }
+  
+    .my-custom-header .container .navbar-brand {
+      font-size: 30px !important;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      transition: color 0.3s; 
+      text-decoration: none;
+    }
+  
+    .ConocimientosLista li {
+      flex-basis: calc(33.33% - 10px); 
+      margin-right: 10px !important;
+      margin-bottom: 10px; 
+      height: auto;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .Pres {
+      padding: 100px;
+      margin: 5% auto; 
+    }
+  
+    .col-md-6 img {
+      width: 200px;
+      height: 200px;
+      margin-left: 10px;
+      margin-top: 0;
+    }
+  
+    .SobreMi {
+      font-size: 36px;
+      margin-left: 0;
+      white-space: normal;
+    }
+  
+    .icon-large {
+      font-size: 36px;
+    }
+  
+    .SobreMi i {
+      margin-left: 20px;
+      font-size: 36px;
+    }
+  
+    .ConocimientosLista li {
+      flex-basis: calc(33.33% - 10px); 
+      margin-right: 5px !important;
+      margin-bottom: 10px; 
+      height: auto;
+
+    }
+
+    #VerMas1{
+      display: block;
+      background-color: #B51A2B;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-top: 126px !important;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    
+    #VerMas1:hover{
+      background-color: #050505;
+    }
+    
+    #VerMas2{
+      display: block;
+      background-color: #B51A2B;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-top: 0px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    
+    #VerMas2:hover{
+      background-color: #050505;
+    }
+    
+    #VerMas3{
+      display: block;
+      background-color: #B51A2B;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-top: 73px !important;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    
+    #VerMas3:hover{
+      background-color: #050505;
+    }
+
+    form {
+      background-color: #222121;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      max-width: 800px;
+      margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgb(255, 1, 1);
+
+  
+    }
+
+    .contact-section{
+      background-color: #222121 !important;
+      color: white;
+      text-align: center;
+      padding: 100px;
+      max-width: 1200px;
+      margin: 50px auto;
+      margin-top: 150px;
+      box-shadow: 5px 5px 10px rgb(255, 1, 1);
+    }
+
+    .Proyectos {
+      background-color: #222121;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      max-width: 1200px;
+      margin: 50px auto;
+      margin-top: 150px;
+      box-shadow: 5px 5px 10px rgb(255, 1, 1);
+    }
+  }
+
+
+  @media (max-width: 768px) and (max-width: 1024px){
+    .navbar-toggler {
+      position: absolute;
+      right: 20px;
+    }
+    .my-custom-header .container .navbar-brand {
+      font-size: 15px;
+    }
+      .Sociales li {
+        margin: 0; 
+      }
+  
+      .redes-sociales img {
+        width: 40px; 
+        height: 40px;
+      }
+  
+      .ConocimientosLista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+  
+      .ConocimientosLista li {
+        flex-basis: calc(33.33% - 10px); 
+        margin-right: 30px;
+        margin-bottom: 10px; 
+        height: auto;
+      }
+  
+      .ConocimientosLista img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50px;
+        object-fit: cover;
+        transition: transform 0.2s ease-in-out;
+      }
+  
+     
+      .ConocimientosLista img:hover {
+        transform: scale(1.1);
+      }
+  
+      .Proyecto {
+        width: 100%; 
+        margin-bottom: 20px; 
+      }
+  
+      .Proyecto img {
+        width: 100%;
+        max-height: 150px; 
+        object-fit: cover;
+      }
+  
+      .SobreMiTexto {
+        flex-direction: column; 
+        text-align: center; 
+      }
+      .SobreMiTexto img {
+        width: 150px; 
+        height: 150px;
+        margin: 0 auto 20px;
+        margin: 40px;
+      }
+  
+      .SobreMi {
+        font-size: 28px;
+        text-align: center;
+        margin-left: 0px;
+      }
+  
+      .SobreMiTexto p {
+        margin-bottom: 20px;
+      }
+  
+      .contact-section {
+        text-align: center;
+      }
+    
+      .contact-form {
+        max-width: 90%;
+      }
+    
+      .contact-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    
+      label {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        font-size: 14px;
+        padding: 8px;
+        margin-bottom: 15px;
+      }
+    
+      .btn-submit {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .ProyectosContenedor {
+        flex-direction: column; /* Cambia la dirección de la flexbox a columna */
+        align-items: center; /* Centra los proyectos verticalmente */
+      }
+    
+      .Proyecto {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px;
+      }
+    
+      .Proyecto img {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen para que sea responsiva */
+      }
+
+      #VerMas1{
+        display: block;
+        background-color: #B51A2B;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-top: 70px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      #VerMas1:hover{
+        background-color: #050505;
+      }
+      
+      #VerMas2{
+        display: block;
+        background-color: #B51A2B;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-top: 50px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      #VerMas2:hover{
+        background-color: #050505;
+      }
+      
+      #VerMas3{
+        display: block;
+        background-color: #B51A2B;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-top: 40px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      #VerMas3:hover{
+        background-color: #050505;
+      }
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid red !important;
+    }
+
+    
+    

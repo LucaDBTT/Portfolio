@@ -4,180 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat:ital,wght@1,500&family=Oswald:wght@200&family=Oxygen+Mono&family=Raleway:ital,wght@1,300&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
-      <nav>
-        <div class="logo"> 
-              <img src="https://avatars.githubusercontent.com/u/107052106?v=4" alt="Luca">
-              <span> <a href="#informacion-general">Luca Di Battista</a></span>
+  <header class="bg-danger text-white py-3 my-custom-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger Nav-header">
+      <div class="container">
+        <a class="navbar-brand navbar-text" href="#informacion-general">
+          <img src="https://avatars.githubusercontent.com/u/107052106?v=4" alt="Luca" class="img-fluid rounded-circle" style="width: 60px;">
+          Luca Di Battista
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#Presentacion">Sobre Mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conocimientos">Conocimientos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Redes">Redes</a></li>
+          </ul>
         </div>
-
-        <ul class="nav-links">
-        <li><a href="#Presentacion">Sobre Mí</a></li>
-        <li><a href="#conocimientos">Conocimientos</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#Redes">Redes</a></li>
-        </ul>
+      </div>
     </nav>
-    </header>
+  </header>
 
-<section id="Presentacion" class="Pres">
-    <div>
-        <h2 class="SobreMi">  SOFTWARE DEVELOPER<i class="fas fa-laptop-code"></i> </h2>
-    <p class="SobreMiTexto"> 
-        Que tal internauta! mi nombre es Luca Di Battista, tengo 22 años, soy un Junior Developer proactivo, organizado y responsable, con fuertes habilidades interpersonales y capacidad para liderar equipos. 
-        Ademas soy un estudiante de una Tecnicatura Superior en Programación en la Universidad Tecnológica Nacional regional Pacheco.
-        Mi objetivo es seguir aprendiendo y creciendo como profesional en el mundo de la programación, mientras contribuyo a proyectos significativos. 
-        Me encanta programar y pasar tiempo en mi zona de confort.<br><br>
-        Ademas siempre estoy dispuesto a dar lo mejor de mí en cada proyecto.
-        <img src="https://avatars.githubusercontent.com/u/107052106?v=4" alt="User">
-    </p>
+  <section id="Presentacion" class="Pres py-5 px-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <h2 class="SobreMi my-4">SOFTWARE DEVELOPER<i class="fas fa-laptop-code"></i></h2>
+          <p class="SobreMiTexto text-left">
+            Que tal internauta! mi nombre es Luca Di Battista, tengo 22 años, soy un Junior Developer proactivo, organizado y responsable, con fuertes habilidades interpersonales y capacidad para liderar equipos.
+            Ademas soy un estudiante de una Tecnicatura Superior en Programación en la Universidad Tecnológica Nacional regional Pacheco.
+            Mi objetivo es seguir aprendiendo y creciendo como profesional en el mundo de la programación, mientras contribuyo a proyectos significativos.
+            Me encanta programar y pasar tiempo en mi zona de confort.<br><br>
+            Ademas siempre estoy dispuesto a dar lo mejor de mí en cada proyecto.
+          </p>
+        </div>
+        <div class="col-md-6 col-12">
+          <img src="https://avatars.githubusercontent.com/u/107052106?v=4" alt="User" class="my-custom-image img-fluid rounded-circle mx-auto d-block">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="informacion-general" class="InformacionGeneral">
-  <div>
-      <h2 class="InformacionGeneralTitulo">INFORMACIÓN GENERAL <i class="fas fa-info-circle"></i></h2>
-      <ul class="InformacionGeneralLista">
-          <li><strong>Nombre:</strong> Luca Di Battista</li><br>
-          <li><strong>Edad:</strong> 22 años</li><br>
-          <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li><br>
-          <li><strong>Educación:</strong> Colegio Secundario San Vicente de Paul Bachiller con orientación en CienciasNaturales, 2019 / Universidad Tecnológica Nacional regional Pacheco Tecnicatura Superior en Programación</li><br>
-          <li><strong>Cursos:</strong> Desarrollador Web  Universidad Tecnológica Nacional en el marco de Argentina Programa 4.0, 2023</li><br>
-          <li><strong>Experiencia Laboral:</strong> Junior Developer en [The Oak Tree]</li><br>
-          <li><strong>Idiomas:</strong> Español (nativo), Inglés (intermedio)</li><br>
-          <li><strong>Intereses:</strong> Programación, tecnología, videojuegos, deportes</li><br>
-          <li><strong>Objetivos Profesionales:</strong> Busco oportunidades en el campo de la programación y perfiles IT, incluyendo roles como Programador Analista, Desarrollador de software, Data Science y desarrollo Web...</li>
+  <section id="informacion-general" class="InformacionGeneral bg-tu-color">
+    <div class="container py-5">
+      <h2 class="InformacionGeneralTitulo text-center mb-4">INFORMACIÓN GENERAL <i class="fas fa-info-circle"></i></h2>
+      <div class="row">
+        <div class="col-md-10">
+          <ul class="InformacionGeneralLista">
+            <li><strong>Nombre:</strong> Luca Di Battista</li>
+            <li><strong>Edad:</strong> 22 años</li>
+            <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
+            <li><strong>Educación:</strong> Colegio Secundario San Vicente de Paul Bachiller con orientación en Ciencias Naturales, 2019 / Universidad Tecnológica Nacional regional Pacheco Tecnicatura Superior en Programación</li>
+            <li><strong>Cursos:</strong> Desarrollador Web Universidad Tecnológica Nacional en el marco de Argentina Programa 4.0, 2023</li>
+            <li><strong>Experiencia Laboral:</strong> Junior Developer en [The Oak Tree]</li>
+            <li><strong>Idiomas:</strong> Español (nativo), Inglés (intermedio)</li>
+            <li><strong>Intereses:</strong> Programación, tecnología, videojuegos, deportes</li>
+            <li><strong>Objetivos Profesionales:</strong> Busco oportunidades en el campo de la programación y perfiles IT, incluyendo roles como Programador Analista, Desarrollador de software, Data Science y desarrollo Web...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="proyectos" class="Proyectos">
+    <div class="container">
+      <h2 class="ProyectosTitulo">Proyectos <i class="fas fa-laptop"></i></h2>
+      <div class="row">
+        <div class="col-md-4 col-12 mb-4">
+          <div class="Proyecto">
+            <img src="https://play-lh.googleusercontent.com/w_9BTyGbUoHLUwD6njzTY1qLky5HfxM9mTQ7VOFKUL0rWhptETDHCxHbKztHI9VadA" alt="Proyecto 1">
+            <h3 class="ProyectoTitulo">La Generala</h3>
+            <p class="ProyectoDescripcion">Tecnologías: c/c++, CodeBlocks, GitHub / Me encargue del Desarrollo total de la aplicación / Proyecto hecho a modo de final para la UTN.</p>
+            <a id="VerMas1" href="https://github.com/LucaDBTT/Generala" target="_blank" class="ProyectoEnlace">Ver más</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mb-4">
+          <div class="Proyecto">
+            <img src="https://dosg.net/wp-content/uploads/2018/03/cafeteria.jpg" alt="Proyecto 2">
+            <h3 class="ProyectoTitulo">Sistema de gestión de una cafetería</h3>
+            <p class="ProyectoDescripcion">Tecnologías: Visual studio Community, C++, Archivos ABML, GitHub, Word / Me encargue de todo el desarrollo / Proyecto hecho a modo de final para la UTN.</p>
+            <a id="VerMas2" href="https://github.com/cnHernandez/Cafeteria" target="_blank" class="ProyectoEnlace">Ver más</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mb-4">
+          <div class="Proyecto">
+            <img src="https://revistaempresarial.com/wp-content/uploads/2017/08/136-VENTAS-POR-INTERNET.jpg" alt="Proyecto 3">
+            <h3 class="ProyectoTitulo">Gestor de Articulos</h3>
+            <p class="ProyectoDescripcion">Aplicación de escritorio WinForm realizada en C#, utilizando .NET Framework 4.8, a modo de trabajo práctico para la Universidad Tecnológica Nacional.</p>
+            <a id="VerMas3" href="https://github.com/LucaDBTT/TP-WinForm-Equipo-12" target="_blank" class="ProyectoEnlace">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="conocimientos" class="Conocimientos">
+  <div class="container">
+      <h2 class="ConocimientosTitulo">SKILLS <i class="fas fa-code"></i></h2>
+      <ul class="ConocimientosLista">
+          <li>
+              <img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="C">
+          </li>
+          <li>
+              <img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="C++">
+          </li>
+          <li>
+              <img src="https://cdn-icons-png.flaticon.com/128/6132/6132221.png" alt="C#">
+          </li>
+          <li>
+              <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="HTML">
+          </li>
+          <li>
+              <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS">
+          </li>
+          <li>
+              <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JAVASCRIPT">
+          </li>
+          <li>
+              <img src="https://thestandardcio.com/wp-content/uploads/sites/2/2015/03/Microsoft-NET.jpg" alt=".NET">
+          </li>
+          <li>
+              <img src="https://ipappg.edu.pe/blog/wp-content/uploads/2022/05/mssqlserver.png" alt="SQL">
+          </li>
       </ul>
   </div>
 </section>
 
-  <section id="conocimientos" class="Conocimientos">
-    <div>
-        <h2 class="ConocimientosTitulo">SKILLS <i class="fas fa-code"></i></h2>
-        <ul class="ConocimientosLista">
-            <li>
-                <img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="C">
-            <li>
-                <img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="C++">
-            <li>
-                <img src="https://cdn-icons-png.flaticon.com/128/6132/6132221.png" alt="C#">
-            </li>
-            <li>
-                <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="HTML">
-            </li>
-            <li>
-                <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS">
-            </li>
-            <li>
-                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JAVASCRIPT">
-            </li>
-            <li>
-                <img src="https://thestandardcio.com/wp-content/uploads/sites/2/2015/03/Microsoft-NET.jpg" alt=".NET">
-            </li>
-            <li>
-                <img src="https://ipappg.edu.pe/blog/wp-content/uploads/2022/05/mssqlserver.png" alt="SQL">
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section id="proyectos" class="Proyectos">
-  <div>
-      <h2 class="ProyectosTitulo">Proyectos <i class="fas fa-laptop"></i></h2>
-      <div class="ProyectosContenedor">
-          <div class="Proyecto">
-              <img src="https://play-lh.googleusercontent.com/w_9BTyGbUoHLUwD6njzTY1qLky5HfxM9mTQ7VOFKUL0rWhptETDHCxHbKztHI9VadA" alt="Proyecto 1">
-              <h3 class="ProyectoTitulo">La Generala</h3>
-              <p class="ProyectoDescripcion">Tecnologías: c/c++, CodeBlocks, GitHub / Me encargue del Desarrollo total de la aplicación / Proyecto hecho a modo de final para la UTN.</p>
-              <a id="VerMas1" href="https://github.com/LucaDBTT/Generala" target="_blank" class="ProyectoEnlace">Ver más</a>
-          </div>
-          <div class="Proyecto">
-              <img src="https://dosg.net/wp-content/uploads/2018/03/cafeteria.jpg" alt="Proyecto 2">
-              <h3 class="ProyectoTitulo">Sistema de gestión de una cafetería</h3>
-              <p class="ProyectoDescripcion">Tecnologías: Visual studio Community, C++, Archivos ABML,GitHub, Word / Me encargue de todo el desarrollo / Proyecto hecho a modo de final para la UTN.</p>
-              <a id="VerMas2" href="https://github.com/cnHernandez/Cafeteria" target="_blank" class="ProyectoEnlace">Ver más</a>
-          </div>
-          <div class="Proyecto">
-            <img src="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/Venta-de-tecnologia.png" alt="Proyecto 3">
-            <h3 class="ProyectoTitulo">Gestor de Articulos</h3>
-            <p class="ProyectoDescripcion">Aplicación de escritorio WinForm realizada en C#, utilizando .NET Framework 4.8, a modo de trabajo práctico para la Universidad Tecnológica Nacional.</p>
-            <a id="VerMas3" href="https://github.com/LucaDBTT/TP-WinForm-Equipo-12" target="_blank" class="ProyectoEnlace">Ver más</a>
-        </div>
-      </div>
-  </div>
-</section>
 
 <section id="contacto" class="contact-section">
-  <h2 class="contact-title">Contáctame <i class="far fa-envelope"></i></h2>
-  <form id="contact-form" class="contact-form">
-    <div class="form-group">
-      <label for="nombre">Nombre y Apellido:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      <div id="nombre-error" class="error-message"></div>
-    </div>
-
-    <div class="form-group">
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" required>
-      <div id="email-error" class="error-message"></div>
-    </div>
-
-    <div class="form-group">
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-    </div>
-
-    <input type="submit" value="Enviar" class="btn-submit">
-    <div id="success-message" class="success-message">
-      <p>¡Correo electrónico enviado con éxito!</p>
-    </div>
-
-  </form>
+  <div class="container">
+    <h2 class="contact-title">Contáctame <i class="far fa-envelope"></i></h2>
+    <form id="contact-form" class="contact-form mx-auto">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="nombre" class="tu-clase-personalizada">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control tu-clase-personalizada" required>
+            <div id="nombre-error" class="error-message tu-clase-personalizada"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="email" class="tu-clase-personalizada">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" class="form-control tu-clase-personalizada" required>
+            <div id="email-error" class="error-message tu-clase-personalizada"></div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mensaje" class="tu-clase-personalizada">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" class="form-control tu-clase-personalizada" required></textarea>
+      </div>
+      <input type="submit" value="Enviar" class="btn btn-primary tu-clase-personalizada">
+      <div id="success-message" class="success-message tu-clase-personalizada">
+        <p>¡Correo electrónico enviado con éxito!</p>
+      </div>
+    </form>
+  </div>
 </section>
 
 <script src="script.js"></script>
 </body>
 
-<footer>
-  <section class="Sociales">
-    <div>
+<footer id="Redes">
+  <div class="container py-5">
+    <section class="Sociales">
       <h2 class="Redes">REDES <i class="fas fa-users"></i></h2>
-      <ul class="redes-sociales">
-        <li>
-          <a id="Redes" href="https://github.com/LucaDBTT" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/128/38/38401.png" alt="GitHub">
+      <ul class="list-unstyled row">
+        <li class="col-md-3 col-sm-6 mb-3">
+          <a href="https://github.com/LucaDBTT" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/38/38401.png" alt="GitHub" class="img-fluid">
           </a>
           <span class="RedesNombre">GitHub</span>
         </li>
-        <li>
-          <a id="Redes" href="https://www.linkedin.com/in/luca-di-battista-58701521b/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn">
+        <li class="col-md-3 col-sm-6 mb-3">
+          <a href="https://www.linkedin.com/in/luca-di-battista-58701521b/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn" class="img-fluid">
           </a>
           <span class="RedesNombre">Linkedin</span>
         </li>
-        <li>
-          <a id="Redes" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJGBgKKblgmSvRkjHRNdrRwDDDfWpJfzVnczRjzhldRqTgFGkcfZMJQgKgntGhVqqCJdV" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png" alt="Mail">
+        <li class="col-md-3 col-sm-6 mb-3">
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJGBgKKblgmSvRkjHRNdrRwDDDfWpJfzVnczRjzhldRqTgFGkcfZMJQgKgntGhVqqCJdV" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png" alt="Mail" class="img-fluid">
           </a>
           <span class="RedesNombre">Gmail</span>
         </li>
-        <li>
-          <a id="Redes" href="https://www.instagram.com/lucaadibattista/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Instagram">
+        <li class="col-md-3 col-sm-6 mb-3">
+          <a href="https://www.instagram.com/lucaadibattista/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Instagram" class="img-fluid">
           </a>
           <span class="RedesNombre">Instagram</span>
         </li>
       </ul>
-    </div>
-  </section>
+    </section>
+  </div>
 </footer>
 </html>
