@@ -631,7 +631,7 @@ p {
       color: white;
       text-decoration: none;
       padding: 10px 20px;
-      margin-top: 73px !important;
+      margin-top: 79px !important;
       border-radius: 5px;
       transition: background-color 0.3s;
     }
@@ -836,7 +836,7 @@ p {
         color: white;
         text-decoration: none;
         padding: 10px 20px;
-        margin-top: 40px;
+        margin-top: 55px;
         border-radius: 5px;
         transition: background-color 0.3s;
       }
