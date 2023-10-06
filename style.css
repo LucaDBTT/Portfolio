@@ -17,6 +17,7 @@ p {
   font-size: 1rem; 
 }
 
+
 .my-custom-header .container img {
   width: 10%; 
 }
@@ -77,7 +78,6 @@ p {
   font-family: 'Montserrat', sans-serif;
   color: white;
   transition: color 0.3s; 
-  text-decoration: none;
 }
 
 .my-custom-header .container a:hover {
@@ -120,6 +120,12 @@ p {
   align-items: center;
   flex-direction: column; /* Alinea el texto e imagen verticalmente */
   text-align: center;
+}
+
+.SobreMiTexto::first-letter{
+  color:#B51A2B;
+font-size: 2rem;
+font-family: 'Montserrat', cursive;
 }
 
 .col-md-6 img {
@@ -366,12 +372,14 @@ p {
   text-decoration: none;
   padding: 10px 20px;
   margin-top: 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgb(255, 1, 1);
+  transition: transform 200ms, box-shadow 200ms;
 }
 
-.ProyectoEnlace:hover {
-  background-color: #050505;
+.ProyectoEnlace:active {
+  transform: translateY(4px) translateX(4px);
+    box-shadow: #050505 0px 0px 0px;
 }
 
 #VerMas1{
@@ -463,19 +471,24 @@ p {
   
   .btn {
     background-color: #B51A2B !important;
+    box-shadow: 5px 5px 10px rgb(255, 1, 1);
     color: white;
     padding: 10px 20px;
     font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 200ms, box-shadow 200ms;
   }
-  
-  .btn:hover {
+
+  .btn:hover{
     background-color: #050505 !important;
   }
   
+  .btn:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #050505 0px 0px 0px;
+  }
 
   .contact-title {
     font-size: 36px;
@@ -688,12 +701,7 @@ p {
       .Sociales li {
         margin: 0; 
       }
-  
-      .redes-sociales img {
-        width: 40px; 
-        height: 40px;
-      }
-  
+
       .ConocimientosLista {
         display: flex;
         justify-content: center;
@@ -722,7 +730,7 @@ p {
       }
   
       .Proyecto {
-        width: 100%; 
+        width: 10%; 
         margin-bottom: 20px; 
       }
   
@@ -782,6 +790,24 @@ p {
       .btn-submit {
         font-size: 16px;
         padding: 10px 20px;
+      }
+
+      .InformacionGeneral {
+        background-color: #222121;
+        color: white;
+        text-align: center;
+        padding: 0px;
+        max-width: 800px;
+        margin: 50px auto;
+        margin-top: 160px;
+        box-shadow: 5px 5px 10px rgb(255, 1, 1);
+      }
+
+      .InformacionGeneral ul {
+        list-style: none;
+        padding: 0;
+        margin-left: 0px;
+        margin-top: 20px;
       }
     }
 
